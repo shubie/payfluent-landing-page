@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payfluent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      tailwind.config = {
+        content: ["./public/**/*.html"],
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E3A8A",
+              secondary: "#3B82F6",
+              dark_blue: "#1E3A8A",
+              light_blue: "#DBEAFE",
+            },
+            fontFamily: {
+              "space": ["Space Grotesk"],
+              "space font-medium": ["space font-medium"],
+              "inter": ["Inter"],
+            },
+          },
+        },
+        plugins: [],
+      }
+    </script>
+  </head>
+  <body>
+    <!-- APP CONTAINER -->
+    <div class="relative min-h-full w-screen flex flex-col items-center overflow-x-hidden font-space">
+      <!-- NAV -->
+      <nav
+        class="w-full overflow-x-auto border-b border-light_blue font-inter"
+      >
+        <div class="flex flex-row gap-4 items-center justify-between pt-3 pb-3">
+          <div class="navbar-left flex-shrink-0 pl-6 md:pl-14">
+            <div class="logo-container">
+              <div
+                class="italic text-dark_blue font-inter font-bold text-xl sm:text-2xl mr-6"
+              >
+                <a class="flex flex-row items-center gap-1 md:gap-2" href="/">
+                  <img class="h-6" src="logo.png" alt="Logo" />
+                  <div class="pb-0.5">Payfluent</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-dark_blue font-inter font-medium flex items-center space-x-4 text-sm flex-shrink-0 pr-6 md:pr-14"
+          >
+            <a href="/#" class="whitespace-nowrap">Home</a>
+            <div
+              class="border border-light_blue py-2 px-6 rounded-lg cursor-pointer text-sm"
+            >
+              <div class="whitespace-nowrap">Log in</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- PAGE CONTENT -->
+      <div class="flex flex-col items-center w-full max-w-[85rem]">
+        <!-- MAIN TITLE AND LIGHT BLURRY WINDOW -->
+        <div class="w-full flex flex-col items-center px-4 sm:px-10">
+          <!-- MAIN TITLE -->
+          <div class="transition-all flex justify-center items-center flex-col h-full z-10 mt-10 sm:mt-28">
+            <div
+              class="text-4xl md:text-6xl text-primary max-w-2xl text-center font-space font-bold"
+            >
+              Payment processing for
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#1D4ED8] to-[#97EEEE]"
+                >web3</span
+              >
+              products
+            </div>
+            <div
+              class="text-[#33322F] text-base md:text-xl max-w-[30rem] text-center mt-4"
+            >
+              Payment processing for Web3 at the edge of money.
+              Infrastructure for your web3 product.
+            </div>
+            <!-- BUTTONS -->
+            <div class="w-full mt-6 flex flex-col justify-center items-stretch sm:flex-row gap-4">
+              <a
+                class="bg-primary transition-colors hover:bg-[#1e3b8a8d] rounded-lg flex items-center justify-center px-6 py-3 sm:py-2"
+                href="#"
+              >
+                <div class="text-white text-sm">Get Started</div></a
+              >
+              <a
+                class="bg-white transition-colors hover:bg-[#f6f6f6] rounded-lg flex items-center justify-center px-6 py-3 sm:py-2"
+                href="#"
+              >
+                <div class="text-[#5A5A5A]">Read the documentation</div></a
+              >
+            </div>
+          </div>
+          <!-- LIGHT BLURRY WINDOW -->
+          <div
+            class="w-full md:w-[80%] aspect-video mb-4 mt-10 transition-all sm:mt-14 border-[3px] border-[#93C5FD] backdrop-blur-md rounded-xl sm:rounded-2xl bg-transparent"
+          ></div>
+        </div>
+
+        <!-- LOWER CONTENT (with full width on smalled devices) -->
+        <div class="w-full flex flex-col items-center md:px-10 transition-all">
+          <!-- WHY PAYFLUENT -->
+          <div class="mt-10 md:mt-20 w-full bg-primary transition-all md:rounded-2xl flex flex-col items-stretch gap-2 p-6 py-10 md:p-10 text-white font-space">
+            <div class="uppercase font-space font-medium text-[#00FFFF]">
+              Why Payfluent
+            </div>
+            <div class="text-4xl font-space font-medium max-w-[35rem]">
+              A technology-first approach to payments and finance
+            </div>
+            <div class="mt-10 grid md:grid-cols-2 gap-x-4 gap-y-8">
+              <div class="grid grid-cols-2 grid-rows-2 gap-8">
+                <!-- ACCEPT PAYMENTS -->
+                <div class="flex flex-col items-start gap-1">
+                  <object class="w-8" data="./icons/why-payfluent/accept-payments.svg" type="image/svg+xml"></object>
+                  <div class="text-[#00FFFF] font-space font-bold mt-4">Accept Payments</div>
+                  <div class="text-sm">Accept payment methods your customers want to use.</div>
+                </div>
+                <!-- FAST PAYOUTS -->
+                <div class="flex flex-col items-start gap-1">
+                  <object class="w-8" data="./icons/why-payfluent/fast-payouts.svg" type="image/svg+xml"></object>
+                  <div class="text-[#00FFFF] font-space font-bold mt-4">Fast Payouts</div>
+                  <div class="text-sm">Programmatic, fast payouts to your account.</div>
+                </div>
+                <!-- TRANSPARENT FEES -->
+                <div class="flex flex-col items-start gap-1">
+                  <object class="w-8" data="./icons/why-payfluent/transparent-fees.svg" type="image/svg+xml"></object>
+                  <div class="text-[#00FFFF] font-space font-bold mt-4">Transparent Fees</div>
+                  <div class="text-sm">Transparent pricing with no hidden fees.</div>
+                </div>
+                <!-- EASY ONBOARDING -->
+                <div class="flex flex-col items-start gap-1">
+                  <object class="w-8" data="./icons/why-payfluent/easy-onboarding.svg" type="image/svg+xml"></object>
+                  <div class="text-[#00FFFF] font-space font-bold mt-4">Easy Onboarding</div>
+                  <div class="text-sm">Create compliant accounts with our simple onboarding.</div>
+                </div>
+              </div>
+              <!-- WINDOW ON THE RIGHT -->
+              <div class="rounded-xl bg-[#2044A2] aspect-square w-full"></div>
+            </div>
+          </div>
+
+          <!-- DESIGNED FOR DEVELOPERS -->
+          <div class="w-full flex flex-col gap-y-20 md:grid transition-all md:grid-cols-2 items-center my-20 md:mt-32 md:my-0">
+            <div class="flex flex-col gap-3 px-6 md:pl-0 md:px-10 transition-all">
+              <div class="text-secondary uppercase font-space font-medium">
+                Designed for Developers
+              </div>
+              <div class="text-4xl text-primary font-space font-bold">
+                Build your vision with our payment APIs
+              </div>
+              <div class="mt-4 leading-7 font-inter text-[#00000080]">
+                We help modern businesses on the forefront of technology accept card and web3 payments and send payouts from one place.
+              </div>
+            </div>
+            <div 
+              class="w-full aspect-[5/4] md:rounded-xl transition-all flex items-center justify-center" 
+              style="background: linear-gradient(126.7deg, #93C5FD 3.05%, #1D4ED8 132.98%);"
+            >
+              <div class="w-[90%] aspect-video flex flex-col items-stretch rounded-2xl bg-[#092160] overflow-hidden">
+                <div class="pt-3 pb-2 bg-primary flex flex-row items-center gap-1 px-3">
+                  <div class="w-[0.6rem] aspect-square rounded-full bg-[#FD413C]"></div>
+                  <div class="w-[0.6rem] aspect-square rounded-full bg-[#FEBC2C]"></div>
+                  <div class="w-[0.6rem] aspect-square rounded-full bg-[#00FFFF]"></div>
+                </div>
+                <div class="flex-grow flex flex-col-reverse w-full p-2 text-white text-xs overflow-y-auto">
+                  <div class="w-full flex-grow" id="typewriter"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WHAT DO YOU GET -->
+          <div class="w-full flex flex-col items-start gap-3 px-6 md:px-0 transition-all md:mt-32">
+            <div class="text-secondary uppercase font-space font-medium">
+              What do you get
+            </div>
+            <div class="text-4xl text-primary font-space font-bold">
+              Our Features 
+            </div>
+            <div class="mt-4 leading-7 font-inter text-[#00000080]">
+              A feature set designed to help businesses onboard fiat and web3 payments.
+            </div>
+          </div>
+
+          <!-- WHAT DO YOU GET - CARDS -->
+          <div class="mt-10 px-6 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 transition-all">
+            <!-- WEB3 READY -->
+            <div class="rounded-2xl border-[3px] border-[#DBEAFE] bg-[#EFF6FF] flex flex-col items-start gap-1 p-6 transition-all">
+              <div class="w-8 aspect-square border rounded-lg border-[#00000021] bg-[#BFDBFE]"></div>
+              <div class="text-primary font-inter font-bold mt-2">
+                Web3 Ready
+              </div>
+              <div class="font-inter text-primary text-sm">
+                Solutions for DeFi or CeFi crypto businesses.
+              </div>
+            </div>
+
+            <!-- COMPLIANCE FIRST -->
+            <div class="rounded-2xl border-[3px] border-[#DBEAFE] bg-[#EFF6FF] flex flex-col items-start gap-1 p-6 transition-all">
+              <div class="w-8 aspect-square border rounded-lg border-[#00000021] bg-[#BFDBFE]"></div>
+              <div class="text-primary font-inter font-bold mt-2">
+                Compliance first
+              </div>
+              <div class="font-inter text-primary text-sm">
+                Compliant solutions with strong traditional financial partners.
+              </div>
+            </div>
+
+            <!-- MODULAR APIS -->
+            <div class="rounded-2xl border-[3px] border-[#DBEAFE] bg-[#EFF6FF] flex flex-col items-start gap-1 p-6 transition-all">
+              <div class="w-8 aspect-square border rounded-lg border-[#00000021] bg-[#BFDBFE]"></div>
+              <div class="text-primary font-inter font-bold mt-2">
+                Modular APIs
+              </div>
+              <div class="font-inter text-primary text-sm">
+                A flexible API to suit use cases from marketplaces to token projects.
+              </div>
+            </div>
+
+            <!-- TRANSPARENT FEES -->
+            <div class="rounded-2xl border-[3px] border-[#DBEAFE] bg-[#EFF6FF] flex flex-col items-start gap-1 p-6">
+              <div class="w-8 aspect-square border rounded-lg border-[#00000021] bg-[#BFDBFE]"></div>
+              <div class="text-primary font-inter font-bold mt-2">
+                Tranparent Fees
+              </div>
+              <div class="font-inter text-primary text-sm">
+                A simple volume and fee-based structure to suit your growing business.
+              </div>
+            </div>
+
+            <!-- EXCLUSIVE ACCESS -->
+            <div class="rounded-2xl border-[3px] border-[#DBEAFE] bg-[#EFF6FF] flex flex-col items-start gap-1 p-6">
+              <div class="w-8 aspect-square border rounded-lg border-[#00000021] bg-[#BFDBFE]"></div>
+              <div class="text-primary font-inter font-bold mt-2">
+                Exclusive access
+              </div>
+              <div class="font-inter text-primary text-sm">
+                Priority access to high-volume channels through our strategic partners.
+              </div>
+            </div>
+          </div>
+
+          <!-- UNIFIED PLATFORM -->
+          <div class="mt-10 md:mt-20 w-full bg-primary transition-all md:rounded-2xl flex flex-col items-stretch gap-2 pt-10 py-4 sm:py-10 md:py-10 text-white font-space">
+            <div class="w-full flex flex-col items-start px-6 md:px-10">
+              <div class="uppercase font-space font-medium text-[#00FFFF]">
+                Unified platform
+              </div>
+              <div class="text-4xl font-space font-medium max-w-[35rem]">
+                Onboard Anyone
+              </div>
+              <div class="mt-4 leading-8 font-inter text-[#ffffff] max-w-[30rem] font-normal">
+                Onboarding for new customers entering the crypto space is difficult and slow. Our compliant middleware solution allows you to onboard customers and accept payments faster, with additional services to mitigate settlement risk.
+              </div>
+            </div>
+
+
+            <!-- 3-PART GRID -->
+            <div class="transition-all sm:px-6 md:px-10">
+              <div class="mt-10 transition-all w-full grid grid-cols-1 sm:grid-cols-3 sm:rounded-3xl overflow-hidden border-t-[3px] sm:border-[3px] border-[#1C5EAF] bg-[#1C5EAF] gap-[3px]">
+                <!-- 01 -->
+                <div class="w-full h-full py-6 px-8 flex flex-col gap-1 transition-all bg-primary sm:bg-[#2044A2]">
+                  <div class="text-[#00FFFF57] text-sm font-inter font-bold">
+                    01
+                  </div>
+                  <div class="text-[#00FFFF] text-lg font-inter font-bold">
+                    High volume protocols
+                  </div>
+                  <div class="font-inter text-sm text-white">
+                    We provide high volume protocols that avoid fraudulent transactions.
+                  </div>
+                </div>
+                <!-- 02 -->
+                <div class="w-full h-full py-6 px-8 flex flex-col gap-1 transition-all bg-primary sm:bg-[#2044A2]">
+                  <div class="text-[#00FFFF57] text-sm font-inter font-bold">
+                    02
+                  </div>
+                  <div class="text-[#00FFFF] text-lg font-inter font-bold">
+                    Modlare APIs
+                  </div>
+                  <div class="font-inter text-sm text-white">
+                    Modular and extensive APIs that make your payments easier.
+                  </div>
+                </div>
+                <!-- 03 -->
+                <div class="w-full h-full py-6 px-8 flex flex-col gap-1 transition-all bg-primary sm:bg-[#2044A2]">
+                  <div class="text-[#00FFFF57] text-sm font-inter font-bold">
+                    03
+                  </div>
+                  <div class="text-[#00FFFF] text-lg font-inter font-bold">
+                    Strong support
+                  </div>
+                  <div class="font-inter text-sm text-white">
+                    Strong support from traditional finance partners anytime 24/7.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- START BUILDING TODAY -->
+          <div class="mt-10 md:mt-20 w-full bg-[#EAF3FF] transition-all md:rounded-2xl flex flex-col sm:flex-row items-stretch gap-6 pt-10 p-6 sm:py-10 md:py-16 md:px-14 text-primary font-space gap-y-14">
+            <!-- LEFT PART -->
+            <div class="flex-grow flex flex-col items-start justify-center gap-5">
+              <div class="font-semibold text-4xl">
+                Start building today
+              </div>
+              <div class="font-light font-inter leading-8 transition-all sm:max-w-[28rem]">
+                Create an account to start accepting payments today. You can also contact us to design a custom package for your business.
+              </div>
+            </div>
+
+            <!-- RIGHT PART (buttons) -->
+            <div class="transition-all flex flex-col items-stretch sm:items-center gap-6 justify-center">
+              <button class="rounded-lg bg-primary text-white py-3 px-16 font-semibold text-sm whitespace-nowrap">
+                Get Started
+              </button>
+              <a href="" class="self-center underline underline-offset-2 text-sm font-semibold text-primary whitespace-nowrap">
+                Read the documentation
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-col items-center relative overflow-hidden">
+          <!-- OUR PARTNERS -->
+          <div class="mt-32 w-full px-10 flex flex-col items-center gap-14">
+            <div class="text-4xl font-semibold font-space text-primary">
+              Our Partners
+            </div>
+            <div class="w-full flex flex-row items-center justify-center gap-[10%] max-w-[40rem]">
+              <object class="w-[30%]" data="./icons/partner-logos/sequoir.svg" type="image/svg+xml"></object>
+              <object class="w-[30%] md:w-[12rem]" data="./icons/partner-logos/arcadia.svg" type="image/svg+xml"></object>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="w-full px-6 md:px-10 mt-32 transition-all flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-y-20">
+            <!-- LEFT -->
+            <div class="flex flex-col items-start text-primary gap-3">
+              <div class="font-semibold text-3xl">
+                Ready to talk?
+              </div>
+              <div class="font-inter text-sm leading-6">
+                We are here to answer questions<br>you have about Payfluent.
+              </div>
+              <button class="w-full sm:w-auto py-3 px-3 text-sm font-inter transition-all hover:bg-[#f4f4f4] sm:py-2 border border-[#DBEAFE] rounded-lg bg-white">
+                Contact Sales
+              </button>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex flex-col transition-all items-center sm:items-end gap-5">
+              <div
+                class="italic text-dark_blue font-inter font-bold text-2xl sm:text-3xl"
+              >
+                <a class="flex flex-row items-center gap-1 md:gap-2" href="/">
+                  <img class="h-6" src="logo.png" alt="Logo" />
+                  <div class="pb-0.5">Payfluent</div>
+                </a>
+              </div>
+              <div class="flex flex-row items-center gap-6">
+                <!-- TWITTER -->
+                <a href="">
+                  <div class="rounded-full border border-[#DBEAFE] transition-all hover:scale-105 flex items-center justify-center bg-white overflow-hidden p-[1rem] w-12 h-12">
+                    <object class="pointer-events-none" data="./icons/socials/twitter.svg" type="image/svg+xml"></object>
+                  </div>
+                </a>
+                <!-- LINKED IN -->
+                <a href="">
+                  <div class="rounded-full border border-[#DBEAFE] transition-all hover:scale-105 flex items-center justify-center bg-white overflow-hidden p-[1rem] w-12 h-12">
+                    <object class="pointer-events-none" data="./icons/socials/linked-in.svg" type="image/svg+xml"></object>
+                  </div>
+                </a>
+                <!-- TELEGRAM -->
+                <a href="">
+                  <div class="rounded-full border border-[#DBEAFE] transition-all hover:scale-105 flex items-center justify-center bg-white overflow-hidden p-[1rem] w-12 h-12">
+                    <object class="pointer-events-none" data="./icons/socials/telegram.svg" type="image/svg+xml"></object>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- COPYRIGHT -->
+          <div class="mt-20 w-full border-t border-[#DBEAFE] flex flex-col items-center justify-center p-4">
+            <div class="font-inter text-primary text-xs">All rights reserved 2022 to Payfluent </div>
+          </div>
+
+          <!-- BG CIRCLES -->
+          <img src="./bg-circles.svg" class="-z-10 blur-[5rem] absolute top-[10rem] opacity-[0.6] min-w-[80rem] w-full h-full object-contain pointer-events-none" />
+        </div>
+
+
+        <!-- BG IMAGE -->
+        <img src="./bg-image.png" class="absolute top-0 min-w-[60rem] w-full -z-10 pointer-events-none " alt="bg" />
+      </div>
+    </div>
+  </body>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+
+  <script defer>
+    const typedContent = `
+      Const payfluent = require(‘payfluent’) (csk_test_BQokikJOvBi2Hl4c‘)<br>
+      <br>
+      await { ' payfluent.paymentIntents.create({' } create { '({' }<br>
+      { 'amount: ' }5000,<br>
+      { ' currency: ' }‘usd’<br>
+      });<br>
+      $ node server.js && stripe listen<br>
+      { '> Ready! Waiting for requests...' }<br>
+      2021-09-01- 11:25:13 [200] payment_intent.created<br>
+      2021-09-01- 11:25:14 [200] charge.succeeded<br>
+      2021-09-01- 11:25:14 [200] payment_intent.succeeded<br>
+      <br>
+      await { ' payfluent.paymentIntents.create({' } create { '({' }<br>
+      { 'amount: ' }5000,<br>
+      { ' currency: ' }‘usd’<br>
+      });<br>
+      $ node server.js && payfluent listen<br>
+      { '> Ready! Waiting for requests...' }<br>
+      2021-09-01- 11:25:13 [200] payment_intent.created<br>
+      2021-09-01- 11:25:14 [200] charge.succeeded<br>
+      2021-09-01- 11:25:14 [200] payment_intent.succeeded`;
+
+
+    const typingEl = document.querySelector("#typewriter")
+    var typewriter = new Typewriter(typingEl, {
+      delay: '20',
+    }).typeString(typedContent).start();
+  </script>
+</html>
