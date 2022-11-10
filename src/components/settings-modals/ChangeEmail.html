@@ -1,0 +1,103 @@
+<!--==== TAILWIND CONFIG ====-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../../tailwindConfig.js"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Space Grotesk";
+  }
+</style>
+<!--========-->
+
+<div
+  class="fixed top-0 left-0 z-[999] w-full h-full flex flex-col items-center justify-center p-3"
+>
+  <!-- MODAL -->
+  <div
+    class="bg-white max-h-full overflow-auto w-full max-w-[25rem] p-6 rounded-xl z-[9999] flex flex-col items-stretch gap-3"
+  >
+    <div class="text-sm font-semibold">Change Email</div>
+
+    <!-- NEW EMAIL -->
+    <div
+      class="flex flex-col items-stretch px-2 pb-2 pt-1 rounded-md border border-slate-300"
+    >
+      <div class="text-xs text-slate-300">New Email</div>
+      <input
+        type="email"
+        class="text-sm bg-transparent w-full text-[#494949]"
+        placeholder="Type here..."
+      />
+    </div>
+
+    <div class="flex flex-col items-stretch gap-1">
+      <!-- Password -->
+      <div
+        class="flex flex-col items-stretch px-2 pb-2 pt-1 rounded-md border border-slate-300"
+      >
+        <div class="flex flex-row items-center">
+          <div class="flex flex-col flex-grow">
+            <div class="text-xs text-slate-300">Password</div>
+            <input
+              type="password"
+              class="text-sm bg-transparent w-full text-[#494949]"
+              placeholder="Type here..."
+            />
+          </div>
+          <button class="w-5 mr-1">
+            <svg
+              viewBox="0 0 30 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.91746 11.5535C3.2377 5.82225 8.75679 1.75 14.965 1.75C21.1713 1.75 26.6904 5.82225 28.0126 11.5535C28.065 11.7809 28.2151 11.9802 28.43 12.1076C28.645 12.2349 28.907 12.2798 29.1586 12.2325C29.4102 12.1852 29.6307 12.0494 29.7715 11.8551C29.9124 11.6608 29.9621 11.4239 29.9097 11.1965C28.4056 4.67775 22.1141 0 14.965 0C7.81597 0 1.52449 4.67775 0.0203374 11.1965C-0.0320312 11.4239 0.0176827 11.6608 0.158542 11.8551C0.299402 12.0494 0.519869 12.1852 0.771444 12.2325C1.02302 12.2798 1.28509 12.2349 1.50001 12.1076C1.71493 11.9802 1.86509 11.7809 1.91746 11.5535V11.5535ZM14.965 5.25C13.1681 5.25 11.4447 5.89531 10.1741 7.04397C8.90343 8.19263 8.18959 9.75055 8.18959 11.375C8.18959 12.9995 8.90343 14.5574 10.1741 15.706C11.4447 16.8547 13.1681 17.5 14.965 17.5C16.762 17.5 18.4853 16.8547 19.756 15.706C21.0266 14.5574 21.7405 12.9995 21.7405 11.375C21.7405 9.75055 21.0266 8.19263 19.756 7.04397C18.4853 5.89531 16.762 5.25 14.965 5.25ZM10.1254 11.375C10.1254 10.2147 10.6353 9.10188 11.5429 8.28141C12.4505 7.46094 13.6815 7 14.965 7C16.2486 7 17.4795 7.46094 18.3871 8.28141C19.2947 9.10188 19.8046 10.2147 19.8046 11.375C19.8046 12.5353 19.2947 13.6481 18.3871 14.4686C17.4795 15.2891 16.2486 15.75 14.965 15.75C13.6815 15.75 12.4505 15.2891 11.5429 14.4686C10.6353 13.6481 10.1254 12.5353 10.1254 11.375V11.375Z"
+                fill="black"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400">Must be at least 8 characters</div>
+    </div>
+
+    <!-- BOTTOM BUTTONS -->
+    <div
+      class="w-full self-center max-w-[30rem] mt-4 flex flex-col gap-x-4 gap-y-2"
+    >
+      <button
+        class="w-full py-3 border border-dark_blue bg-dark_blue transition-all hover:bg-blue-800 text-xs rounded-md text-white"
+      >
+        Save changes
+      </button>
+
+      <button
+        class="w-full py-3 border border-dark_blue rounded-md text-dark_blue transition-all hover:bg-slate-200 text-xs"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL BG -->
+  <div
+    class="cursor-pointer absolute w-full h-full top-0 left-0 bg-[#0000004f] backdrop-blur-lg"
+  ></div>
+</div>
+
+<style>
+  select,
+  select:focus,
+  select:active,
+  input,
+  input:focus,
+  input:active {
+    outline: none;
+    border: none;
+    /* appearance: none; */
+  }
+</style>

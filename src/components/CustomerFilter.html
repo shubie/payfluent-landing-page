@@ -1,0 +1,139 @@
+<!--==== TAILWIND CONFIG ====-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../../tailwindConfig.js"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Space Grotesk";
+  }
+</style>
+<!--========-->
+
+<div class="w-full h-screen flex items-center justify-center">
+  <div class="w-80 rounded-2xl border-2 border-[#DBEAFE] bg-white">
+    <div class="grid grid-cols-2 gap-2 m-5">
+      <div
+        class="h-8 bg-[#F0F4F7] pl-2 text-[#00000080] rounded-lg grid grid-cols-6 items-center"
+      >
+        <span class="col-span-5">Name</span>
+        <div class="w-3 mr-5">
+          <svg
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.99997 5.707L8.64597 9.354L9.35397 8.647L5.70697 5L9.35397 1.354L8.64697 0.645996L4.99997 4.293L1.35397 0.645996L0.646973 1.354L4.29297 5L0.646973 8.646L1.35397 9.354L4.99997 5.707Z"
+              fill="black"
+              fill-opacity="0.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-span-2 w-64 h-10 relative rounded-md border-2 overflow-hidden mx-4 my-5"
+    >
+      <div
+        id="icon"
+        class="absolute h-full flex flex-row items-center pl-1 pointer-events-none text-[#92A3AD]"
+      >
+        <div class="w-4 mx-2">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.1934 15.8389L18.7095 21.0002"
+              stroke="#92A3AD"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <circle
+              cx="8.38709"
+              cy="9.38709"
+              r="7.63709"
+              stroke="#92A3AD"
+              stroke-width="1.5"
+            />
+          </svg>
+        </div>
+        Search name, phone, email
+      </div>
+
+      <input
+        id="search"
+        type="text"
+        class="w-full h-full mx-2 focus:border-none focus:outline-none"
+        oninput="kongo(this.value)"
+      />
+      <script>
+        function kongo(value) {
+          if (value) {
+            document.querySelector("#icon").style.display = "none";
+          } else {
+            document.querySelector("#icon").style.display = "";
+          }
+        }
+      </script>
+    </div>
+
+    <div class="w-full grid grid-cols-1 gap-2">
+      <!--selected -->
+      <div class="h-10 mr-5 text-[#92A3AD] bg-[#EFF6FF] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-[#4747A1] place-self-end mr-3"></div>
+        <div class="col-span-11 text-[#4747A1] grid grid-cols-10 items-center">
+          Name
+        </div>
+      </div>
+      <!--not selected-->
+      <div class="h-10 mr-5 text-[#92A3AD] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-transparent mr-3"></div>
+        <div class="col-span-11 grid grid-cols-10 items-center">
+          <div>Name</div>
+        </div>
+      </div>
+      <div class="h-10 mr-5 text-[#92A3AD] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-transparent mr-3"></div>
+        <div class="col-span-11 grid grid-cols-10 items-center">
+          <div>Name</div>
+        </div>
+      </div>
+      <div class="h-10 mr-5 text-[#92A3AD] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-transparent mr-3"></div>
+        <div class="col-span-11 grid grid-cols-10 items-center">
+          <div>Name</div>
+        </div>
+      </div>
+      <div class="h-10 mr-5 text-[#92A3AD] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-transparent mr-3"></div>
+        <div class="col-span-11 grid grid-cols-10 items-center">
+          <div>Name</div>
+        </div>
+      </div>
+      <div class="h-10 mr-5 text-[#92A3AD] grid grid-cols-12">
+        <div class="h-full w-[2px] bg-transparent mr-3"></div>
+        <div class="col-span-11 grid grid-cols-10 items-center">
+          <div>Name</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex items-center justify-center my-5 gap-3">
+      <button class="w-36 h-11 border-2 border-[#1E3A8A] rounded-lg">
+        Cancel
+      </button>
+      <button
+        class="w-36 h-11 border-2 border-[#1E3A8A] bg-[#1E3A8A] rounded-lg text-white"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>

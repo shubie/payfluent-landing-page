@@ -1,0 +1,49 @@
+<!--==== TAILWIND CONFIG ====-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../../tailwindConfig.js"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Space Grotesk";
+  }
+</style>
+<!--========-->
+
+<!--just for better presentation, each button got to be used on its own-->
+<div class="w-full h-screen flex justify-center items-center gap-3">
+  <!--Blue buton with white X-->
+  <button
+    class="bg-[#1E3A8A] w-10 h-10 rounded-full flex flex-row items-center"
+    on:click
+  >
+    <div class="w-8 mx-2">
+      <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.3988 10.3986L1.18652 1.18633M1.18652 10.3986L10.3988 1.18633L1.18652 10.3986Z"
+          stroke="white"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </button>
+  <!--White button with blue X-->
+  <button
+    class="border-2 border-[#4747A1] w-10 h-10 rounded-full flex flex-row items-center"
+    on:click
+  >
+    <div class="w-8 mx-2">
+      <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.3988 10.3986L1.18652 1.18633M1.18652 10.3986L10.3988 1.18633L1.18652 10.3986Z"
+          stroke="#4747A1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </button>
+</div>

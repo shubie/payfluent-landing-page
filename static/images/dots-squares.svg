@@ -1,0 +1,21 @@
+<svg width="1200" height="827" viewBox="0 0 1200 827" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g style="mix-blend-mode:overlay" clip-path="url(#clip0_393_1983)">
+<rect width="1200" height="827" fill="url(#pattern0)"/>
+<g style="mix-blend-mode:overlay">
+<rect width="1200" height="821" transform="translate(0 64)" fill="url(#pattern1)" fill-opacity="0.76"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.00666667" height="0.00967352">
+<use xlink:href="#image0_393_1983" transform="scale(0.000833333 0.00120919)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="0.02" height="0.0292326">
+<use xlink:href="#image1_393_1983" transform="scale(0.000833333 0.00121803)"/>
+</pattern>
+<clipPath id="clip0_393_1983">
+<rect width="1200" height="827" fill="white"/>
+</clipPath>
+<image id="image0_393_1983" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACZJREFUGBljYGBg+A/EuAA+OVx6CIiDjEQxlomABipJo9iJZuZ/AC8NBf1LtGs1AAAAAElFTkSuQmCC"/>
+<image id="image1_393_1983" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAADxJREFUSA3t0rEJAEAIxdDv7b+z3gYpxC7WQeFhcjv9bvcnHkBhiSRCAQz8IolQAAO/SCIUwKB+0VgtggHmUQIsFeZn2wAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

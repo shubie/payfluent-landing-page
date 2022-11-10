@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .input:focus ~ .label,
+  .input:not(:placeholder-shown).input:not(:focus) ~ .label {
+    top: 0;
+    left: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@font-face {
+  font-family: "space-bold";
+  font-weight: bolder;
+  src: url("../static/fonts/SpaceGrotesk-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "space-regular";
+  font-weight: normal;
+  src: url("../static/fonts/SpaceGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "space-light";
+  font-weight: lighter;
+  src: url("../static/fonts/SpaceGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "space-medium";
+  font-weight: bold;
+  src: url("../static/fonts/SpaceGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "inter-regular";
+  font-weight: normal;
+  src: url("../static/fonts/Inter-Regular.woff");
+}
+
+@font-face {
+  font-family: "inter-bold";
+  font-weight: bold;
+  src: url("../static/fonts/Inter-Bold.woff");
+}
+

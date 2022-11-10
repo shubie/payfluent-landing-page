@@ -1,0 +1,63 @@
+<!--==== TAILWIND CONFIG ====-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../../tailwindConfig.js"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Space Grotesk";
+  }
+</style>
+<!--========-->
+
+<div
+  class="fixed top-0 left-0 z-[999] w-full h-full flex flex-col items-center justify-center p-3"
+>
+  <!-- MODAL -->
+  <div
+    class="bg-white max-h-full overflow-auto w-full max-w-[25rem] p-10 rounded-xl z-[9999] flex flex-col items-start gap-3 text-sm"
+  >
+    <div class="text-2xl font-semibold font-space text-dark_blue">
+      Verify your email<span class="text-[#248AFD]">.</span>
+    </div>
+
+    <div class="">
+      We have sent an email to
+      <span class="font-semibold">samies@gmail.com</span>
+    </div>
+
+    <div class="">
+      To continue, you need to verify. By clicking the link that was sent to
+      your email.
+    </div>
+
+    <div class="">
+      If you have not received the verification email, please click resend
+      button below to have another email sent to you.
+    </div>
+
+    <button class="hover:underline underline-offset-2 mt-2 text-[#248AFD]">
+      Resend verification Email
+    </button>
+  </div>
+
+  <!-- MODAL BG -->
+  <div
+    class="cursor-pointer absolute w-full h-full top-0 left-0 bg-[#0000004f] backdrop-blur-lg"
+  ></div>
+</div>
+
+<style>
+  select,
+  select:focus,
+  select:active,
+  input,
+  input:focus,
+  input:active {
+    outline: none;
+    border: none;
+    /* appearance: none; */
+  }
+</style>

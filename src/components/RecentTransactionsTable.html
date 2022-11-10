@@ -1,0 +1,72 @@
+<!--==== TAILWIND CONFIG ====-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../../tailwindConfig.js"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Space Grotesk";
+  }
+</style>
+<!--========-->
+
+<div class="p-5">
+  <div class="text-2xl m-5">Recent Transactions</div>
+
+  <div class="grid grid-cols-12 text-[#BDC8CF]">
+    <div class="col-span-12 grid grid-cols-12 gap-3 p-5 text-[#00000080]">
+      <div class="col-span-3">TX ID</div>
+      <div class="col-span-2">MERCHANT</div>
+      <div class="col-span-2">AMOUNT</div>
+      <div class="col-span-2">DATE</div>
+      <div class="col-span-2">STATUS</div>
+      <div class="flex place-self-end">FEE</div>
+    </div>
+  </div>
+
+  <hr class="[#DEE4E7] ml-5" />
+
+  <div class="col-span-12 grid grid-cols-12 gap-3 p-5 text-[#00000080]">
+    <div class="col-span-3">edjhdj999589659jjjasdsss</div>
+    <div class="col-span-2">
+      <div class="col-span-2">
+        <div class="flex gap-4">
+          <div class="w-6">AP<!--Avatart Picture placement--></div>
+          Tomáš Kocí
+        </div>
+      </div>
+    </div>
+    <div class="col-span-2">$100</div>
+    <div class="col-span-2">Jun 21, 12:00 AM</div>
+    <div class="col-span-2">
+      <div
+        class="w-24 h-9 bg-[#E5F9E7] text-[#477957] flex items-center place-content-center rounded-lg"
+      >
+        Approved
+      </div>
+    </div>
+    <div class="flex place-self-end">$15</div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-3 p-5 text-[#00000080] bg-[#FBFDFF]">
+    <div class="col-span-3">edjhdj999589659jjjasdsss</div>
+    <div class="col-span-2">
+      <div class="flex gap-4">
+        <div class="w-6">AP<!--Avatart Picture placement--></div>
+        Tomáš Kocí
+      </div>
+    </div>
+    <div class="col-span-2">$100</div>
+    <div class="col-span-2">Jun 21, 12:00 AM</div>
+    <div class="col-span-2">
+      <div
+        class="w-16 bg-[#FFF3F2] text-[#FD413C] rounded-lg h-9 flex items-center place-content-center"
+      >
+        Denied
+      </div>
+    </div>
+    <div class="flex place-self-end">$15</div>
+  </div>
+</div>
